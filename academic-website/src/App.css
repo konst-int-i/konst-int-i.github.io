@@ -1,0 +1,151 @@
+.app {
+  font-family: 'Avenir', sans-serif;
+  background-color: white;
+  /* Add your AI-style elements or other styles here */
+}
+
+.round-image {
+    width: 375px; /* Increased from 150px */
+    height: 375px; /* Increased from 150px */
+    border-radius: 0%;
+    object-fit: cover;
+    margin-right: 2rem;
+    position: relative;
+}
+
+/* Other styles... */
+
+
+/*body {
+    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+*/
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed; /* Fixing the navbar at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #333; /* Dark background for visibility */
+    padding: 1rem 0;
+    z-index: 1000; /* Ensure navbar is above all other content */
+}
+
+.navbar a {
+    color: #fff; /* White text for visibility against dark background */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
+}
+
+/* Style for active class from react-scroll */
+.active {
+    border-bottom: 2px solid #fff;
+}
+
+.landing-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Taking the full viewport height */
+  padding: 2rem; /* Some spacing on all sides */
+}
+
+.landing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.round-image {
+    width: 375px;
+    height: 375px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px; /* Space between the image and the icons */
+}
+
+.intro-text {
+  flex: 1; /* Allows the text to take up remaining space */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Some spacing between the image and the icons */
+}
+
+.social-icon {
+    width: 40px; /* Adjust based on your preference */
+    height: 40px;
+    margin: 0 10px; /* 10px spacing between icons */
+}
+
+
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centering items vertically */
+}
+
+.social-icons {
+    display: flex;
+    position: absolute;
+    bottom: 20px; /* Adjust as needed */
+    left: 50%; /* Move it to the middle */
+    transform: translateX(-50%); /* Center the icons relative to the middle of the container */
+    /* ... other properties ... */
+}
+
+.social-icon {
+    margin: 0 10px; /* Add some space between each icon */
+}
+
+
+.main-heading{
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 0px;
+  margin-top: -150px;
+}
+
+.sub-heading{
+  font-size: 1.5em;
+  color: #a0a0a0;
+}
+
+.image-subheading {
+    text-align: left;
+    margin-top: 0px; /* Adjust as necessary for spacing between the image and the subheading */
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    color: #a0a0a0;
+    
+}
+
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* This will horizontally center the contained elements */
+    justify-content: center; /* This will vertically center the contained elements */
+    height: 100%; /* Ensures the container takes up full available height */
+    margin-left: -350px;
+    margin-right: 150px;
+    margin-top: -150px
+}
+
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center items (title & subtitle) vertically */
+
+}
