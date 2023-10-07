@@ -1,6 +1,7 @@
 .app {
   font-family: 'Avenir', sans-serif;
   background-color: white;
+  overflow: hidden;
   /* Add your AI-style elements or other styles here */
 }
 
@@ -147,5 +148,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center items (title & subtitle) vertically */
+}
 
+#tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* This ensures the particles render behind your content */
 }
