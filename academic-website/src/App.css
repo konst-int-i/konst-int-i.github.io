@@ -1,8 +1,6 @@
 .app {
   font-family: 'Avenir', sans-serif;
-  background-color: white;
   overflow: hidden;
-  /* Add your AI-style elements or other styles here */
 }
 
 .round-image {
@@ -17,10 +15,6 @@
 /* Other styles... */
 
 
-/*body {
-    font-family: 'Avenir', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
-*/
 
 .navbar {
     display: flex;
@@ -154,5 +148,5 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1; /* This ensures the particles render behind your content */
+    z-index: -1;
 }
