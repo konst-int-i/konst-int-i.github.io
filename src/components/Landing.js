@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import profilePic from '../assets/konstantin-pic.jpg'; // replace with your picture's path
+import profilePicPixel from '../assets/konstantin-pic-pixel.png';
+import pathologyPatch from '../assets/pathology_patch.png';
 import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.png';
 import googleScholarIcon from '../assets/google-scholar.png';
@@ -9,12 +11,28 @@ import emailIcon from '../assets/email.png';
 
 
 function Landing() {
+  const [isHovered, setIsHovered] = useState(false);
+
   return (
     <section id="home" className="landing-section">
       <div className="landing-content">
 
         <div className="left-section">
-          <img src={profilePic} alt="Konstantin Hemker" className="round-image"/>
+          <div className="image-container"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <img 
+              src={profilePic}
+              alt="profile"
+              className={`round-image ${isHovered && 'hidden'}`}
+            />
+            <img 
+              src={pathologyPatch}
+              alt="profile hover"
+              className={`round-image ${!isHovered && 'hidden'}`}
+            />
+          </div>
           <h3 className="image-subheading">PhD Candidate</h3>
           <h3 className="image-subheading">Department of Computer Science</h3>
           <h3 className="image-subheading">University of Cambridge</h3>
@@ -36,7 +54,8 @@ function Landing() {
 
         <div className="right-section">
           <h1 className="main-heading">Konstantin Hemker</h1>
-          <h2 className="sub-heading">Multi-modal Machine Learning in Healthcare</h2>
+          <h2 className="sub-heading">Multi-modal Machine Learning on Biomedical Data</h2>
+          <p className="description-text"> Description text here </p>
         </div>
 
       </div>

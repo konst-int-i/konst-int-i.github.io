@@ -1,12 +1,8 @@
-import React from 'react';
-
+import React, { useCallback } from 'react';
 import Particles from "react-tsparticles";
-import { useCallback } from "react";
 import particlesConfig from './particles-config.json';
 import { loadSlim } from "tsparticles-slim"; 
 import { particlesInit, particlesLoaded} from "./components/ParticlesUtils";
-
-
 
 import Navbar from './components/Navbar';
 import Landing from './components/Landing';
@@ -19,12 +15,13 @@ function App() {
 
   return (
     <div className="app">
+    {/*
     <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
-            options={particlesConfig}
-        />
+            options={particlesConfig} />
+      */}
       <Navbar />
       <Landing />
       <Section title="Research Highlights" id="publications" componentType="publication" />

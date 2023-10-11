@@ -10,6 +10,7 @@
     object-fit: cover;
     margin-right: 2rem;
     position: relative;
+    transition: all 1.0s ease-in-out;
 }
 
 /* Other styles... */
@@ -24,6 +25,7 @@
     top: 0;
     left: 0;
     right: 0;
+    font-size: 1.2em;
     background-color: #333; /* Dark background for visibility */
     padding: 1rem 0;
     z-index: 1000; /* Ensure navbar is above all other content */
@@ -65,6 +67,26 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 20px; /* Space between the image and the icons */
+    transition: opacity 0.5s ease-in-out;
+    border: 3px solid #154c79;
+    box-sizing: border-box;
+}
+
+.round-image:hover {
+    filter: brightness(100%);
+}
+
+.image-container { /* Add this new class */
+    position: relative;
+    width: 375px; /* same as the image width */
+    height: 375px; /* same as the image height */
+}
+
+.hidden {
+    opacity: 0;
+    position: absolute;
+    top: 0;  /* Resetting to top-left corner */
+    left: 0;
 }
 
 .intro-text {
@@ -116,6 +138,15 @@
   color: #a0a0a0;
 }
 
+.description-text {
+   font-size: 1.2em;  /* Adjust font size as per preference */
+   color: #777;    /* A slightly muted color, but you can use any */
+   margin-top: 10px;  /* Adds a bit of space above the description */
+   max-width: 600px;  /* Limits the width of the text for better readability */
+   line-height: 1.5;  /* Adjusts the spacing between lines for readability */
+}
+
+
 .image-subheading {
     text-align: left;
     margin-top: 0px; /* Adjust as necessary for spacing between the image and the subheading */
@@ -139,6 +170,7 @@
 
 
 .right-section {
+    margin-top: -250px;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center items (title & subtitle) vertically */
