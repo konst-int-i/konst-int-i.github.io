@@ -3,7 +3,7 @@ import React from 'react';
 function Publication({ title, venue, codeLink, paperLink }) {
   return (
     <div>
-      <h3>{title}</h3>
+      <h2 className="section-heading">{title}</h3>
       <p>{venue}</p>
       <a href={codeLink}>Code</a>
       <a href={paperLink}>Paper</a>

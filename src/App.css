@@ -128,6 +128,11 @@
   color: #a0a0a0;
 }
 
+.section-heading { 
+    font-size: 2.5em;
+    text-align: center;
+ }
+
 .description-text {
    font-size: 1.2em;  /* Adjust font size as per preference */
    color: #777;    /* A slightly muted color, but you can use any */
