@@ -3,16 +3,6 @@
   overflow: hidden;
 }
 
-.round-image {
-    width: 375px; /* Increased from 150px */
-    height: 375px; /* Increased from 150px */
-    border-radius: 0%;
-    object-fit: cover;
-    margin-right: 2rem;
-    position: relative;
-    transition: all 1.0s ease-in-out;
-}
-
 /* Other styles... */
 
 
@@ -62,11 +52,11 @@
 }
 
 .round-image {
-    width: 375px;
-    height: 375px;
+    width: 18vw;
+    height: 18vw;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px; /* Space between the image and the icons */
+    margin-bottom: 1vw;
     transition: opacity 0.5s ease-in-out;
     border: 3px solid #154c79;
     box-sizing: border-box;
@@ -78,8 +68,8 @@
 
 .image-container { /* Add this new class */
     position: relative;
-    width: 375px; /* same as the image width */
-    height: 375px; /* same as the image height */
+    width: 18vw; /* same as the image width */
+    height: 18vw; /* same as the image height */
 }
 
 .hidden {
@@ -96,13 +86,13 @@
 .social-icons {
     display: flex;
     justify-content: center; /* Center the icons */
-    margin-top: 20px; /* Some spacing between the image and the icons */
+    margin-top: 2vw; /* Some spacing between the image and the icons */
 }
 
 .social-icon {
     width: 40px; /* Adjust based on your preference */
     height: 40px;
-    margin: 0 10px; /* 10px spacing between icons */
+    margin: 1vw; /* 10px spacing between icons */
 }
 
 
@@ -115,7 +105,7 @@
 .social-icons {
     display: flex;
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
+    bottom: 1vw; /* Adjust as needed */
     left: 50%; /* Move it to the middle */
     transform: translateX(-50%); /* Center the icons relative to the middle of the container */
     /* ... other properties ... */
@@ -129,8 +119,8 @@
 .main-heading{
   font-size: 2.5em;
   font-weight: bold;
-  margin-bottom: 0px;
-  margin-top: -150px;
+  margin-bottom: 0vw;
+  margin-top: -10vw;
 }
 
 .sub-heading{
@@ -141,16 +131,16 @@
 .description-text {
    font-size: 1.2em;  /* Adjust font size as per preference */
    color: #777;    /* A slightly muted color, but you can use any */
-   margin-top: 10px;  /* Adds a bit of space above the description */
-   max-width: 600px;  /* Limits the width of the text for better readability */
+   margin-top: 1vw;  /* Adds a bit of space above the description */
+   max-width: 40vw;  /* Limits the width of the text for better readability */
    line-height: 1.5;  /* Adjusts the spacing between lines for readability */
 }
 
 
 .image-subheading {
     text-align: left;
-    margin-top: 0px; /* Adjust as necessary for spacing between the image and the subheading */
-    margin-bottom: 0px;
+    margin-top: 0vw; /* Adjust as necessary for spacing between the image and the subheading */
+    margin-bottom: 0vw;
     font-size: 1.5em;
     color: #a0a0a0;
     
@@ -163,14 +153,14 @@
     align-items: center;  /* This will horizontally center the contained elements */
     justify-content: center; /* This will vertically center the contained elements */
     height: 100%; /* Ensures the container takes up full available height */
-    margin-left: -350px;
-    margin-right: 150px;
-    margin-top: -150px
+    margin-left: -15vw;
+    margin-right: 5vw;
+    margin-top: -10vw;
 }
 
 
 .right-section {
-    margin-top: -250px;
+    margin-top: -10vw;
     display: flex;
     flex-direction: column;
     justify-content: center; /* Center items (title & subtitle) vertically */
