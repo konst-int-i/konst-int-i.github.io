@@ -28,19 +28,36 @@ function App() {
       <div className="section-container">
         <h2 className='section-heading'> Research Highlights </h2>
         <Publication 
-            teaserImage="path_to_image_1.jpg" 
-            title="Title of Publication 1" 
-            venue="Conference 1"
-            codeLink="link_to_code_1"
-            paperLink="link_to_paper_1"
+            teaserImage='/assets/cgx_overview.jpg' 
+            title="CGXplain: Rule-Based Deep Neural Network Explanations Using Dual Linear Programs" 
+            venue="ICLR 2023 Workshop on Trustworthy Machine Learning in Healthcare, Best Paper Award"
+            codeLink="https://github.com/konst-int-i/cg_explain"
+            paperLink="https://arxiv.org/pdf/2304.05207.pdf"
         />
 
 
         {/* <Section title="Research Highlights" id="publications" componentType="publication" /> */}
       </div>
+      <div className="section-container">
+        <h2 className="section-heading">Teaching</h2>
+        
+        <div className="subsection">
+          <h3 className="subsection-heading">Master's projects</h3>
+          <p className="subsection-text">
+            Text here
+          </p>
+        </div>
+
+        <div className="subsection">
+          <h3 className="subsection-heading">Teaching Assistance</h3>
+          <p className="subsection-text">
+            Text here
+          </p>
+  </div>
+</div>
       
-      <Section title="Teaching" id="teaching" componentType="teaching" />
-      <Section title="Awards" id="awards" componentType="award" />
+      // <Section title="Teaching" id="teaching" componentType="teaching" />
+      // <Section title="Awards" id="awards" componentType="award" />
       {/* ... Other sections */}
     </div>
   );
