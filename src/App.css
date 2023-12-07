@@ -217,12 +217,19 @@
 
 .publication-title {
     font-weight: bold;
-    font-size: 22pt;
+    font-size: 18pt;
+    margin-bottom: 0pt;
 }
 
 .publication-venue {
     font-style: italic;
-    font-size: 16pt;
+    font-size: 14pt;
+    margin-bottom: 0pt; 
+}
+
+.publication-authors { 
+    font-style: italic; 
+    font-size: 14pt;
 }
 
 .publication-icons img {
