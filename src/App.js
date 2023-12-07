@@ -16,13 +16,11 @@ function App() {
 
   return (
     <div className="app">
-      {/*
       <Particles
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={particlesConfig} />
-      */}
       <Navbar />
       <Landing />
       <div className="section-container">
