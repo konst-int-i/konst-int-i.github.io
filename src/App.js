@@ -44,14 +44,27 @@ function App() {
         <div className="subsection">
           <h3 className="subsection-heading">Master's projects</h3>
           <p className="subsection-text">
-            Text here
+            I am currently co-supervising Master's students from the Part III in Computer Science Tripos and Advanced Computer Science MPhil
+            on the following topics: 
+            <ul> 
+              <li> Hierarchical Computer Vision Models on Gigapixel-scale Biomedical Images </li>
+              <li> Post-hoc Explainability for Intermediate Fusion Models in Cancer Medicine </li>
+            </ul>
+            These projects are co-supervised with Dr Nikola Simidjievski and Prof Mateja Jamnik. Please reach out if you are interested 
+            in doing a Master's project in our research group. 
           </p>
         </div>
 
         <div className="subsection">
           <h3 className="subsection-heading">Teaching Assistance</h3>
           <p className="subsection-text">
-            Text here
+            I am involved in teaching the following undergraduate and master's courses: 
+            <ul>
+              <li> <b>Multi-Modal Machine Learning</b> (2023-2024): Course author of submodule in R255 (Advanced topics in Machine Learning) course (Part III/MPhil) </li>
+              <li> <b>Machine Learning and Real-World Data</b> (2023-2024): Teaching Assistant (Part IB) </li>
+              <li> <b>Scientific Computing</b> (2023-2024): Teaching Assistant (Part IA) </li>
+              <li> <b>Business Studies</b> (2023-2024): Teaching Assistant (Part II) </li>
+            </ul>
           </p>
   </div>
 </div>

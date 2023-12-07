@@ -254,11 +254,6 @@
   /* Your existing styles for section heading */
 }
 
-/*.subsection {
-  margin-top: 20px;
-  margin-left: 10px;
-}
-*/
 .subsection {
     width: calc(100% - 10vw); /* Same width calculation as publication-box */
     margin: auto; /* Aligns horizontally like publication-box */
