@@ -267,7 +267,7 @@
 }
 
 .subsection {
-    width: calc(100% - 10vw); /* Same width calculation as publication-box */
+    width: calc(100% - 50vw); /* Same width calculation as publication-box */
     margin: auto; /* Aligns horizontally like publication-box */
     padding: 15px; /* Assuming you want similar padding */
 }
@@ -279,6 +279,7 @@
 
 .subsection-text {
   font-size: 1.2em;
+  text-align: justify;
   color: #666; /* or any color you prefer */
   /* Other styling as needed */
 }

@@ -16,9 +16,6 @@ function Navbar() {
             <Link activeClass="active" to="awards" spy={true} smooth={true} offset={-70} duration={500}>
                 Awards
             </Link>
-            {/* <Link activeClass="active" to="news" spy={true} smooth={true} offset={-70} duration={500}>
-                News
-            </Link> */}
             <Link activeClass="active" to="about" spy={true} smooth={true} offset={-70} duration={500}>
                 About
             </Link>

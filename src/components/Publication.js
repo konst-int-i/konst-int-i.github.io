@@ -1,7 +1,14 @@
 import React from 'react';
 
 
-function Publication({ teaserImage, title, venue, authors, codeLink, paperLink }) {
+// function Publications({
+//   return(
+
+//   )
+// })
+
+
+function PublicationElement({ teaserImage, title, venue, authors, codeLink, paperLink }) {
   return (
     <div className="publication-container">
       <div className="publication-box">
@@ -32,4 +39,4 @@ function Publication({ teaserImage, title, venue, authors, codeLink, paperLink }
 }
 
 
-export default Publication;
+export default PublicationElement;
