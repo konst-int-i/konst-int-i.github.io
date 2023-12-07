@@ -23,7 +23,7 @@ function App() {
         options={particlesConfig} />
       <Navbar />
       <Landing />
-      <div className="section-container">
+      <div className="section-container" id="research">
         <h2 className='section-heading'> Research Highlights </h2>
         <Publication 
           teaserImage='/assets/healnet_overview.jpg'
@@ -58,7 +58,7 @@ function App() {
               paperLink="https://dl.acm.org/doi/abs/10.1145/3357384.3358040"
           />
       </div>
-      <div className="section-container">
+      <div className="section-container" id="teaching">
         <h2 className="section-heading">Teaching</h2>
         <div className="subsection">
           <h3 className="subsection-heading">Master's projects</h3>
@@ -85,6 +85,21 @@ function App() {
             </ul>
           </p>
         </div>
+      </div>
+      <div className="section-container" id="awards">
+        <h2 className="section-heading">Grants & Awards</h2>
+          <div className="subsection">
+            <p className="subsection-text">
+              <ul>
+                <li> <b>Gates Cambridge Scholarship</b>: Full PhD scholarship awarded by the Gates Cambridge Trust. </li>
+                <li> <b>Wiseman Prize</b>: Winner of annual prize awarded for "commendable contributions to the work of the 
+                department" in teaching, mentoring, and outreach activities. </li>
+                <li> <b>Best Paper Award</b>: ICLR 2023 Workshop on Trustworthy Machine Learning for Healthcare. </li>
+                <li> <b>G-Research PhD Grant</b>: Awarded PhD Grant for researchers in quantitative fields. </li>
+                <li> <b>Imperial College London Computing Award for Best Software Engineering Project</b>: Best postgraduate group project in the department. </li>
+              </ul>
+            </p>
+          </div>
       </div>
     </div> // <-- This closes the "app" div
   ); // <-- This closes the return statement
