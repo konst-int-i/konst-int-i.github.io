@@ -297,7 +297,14 @@
   
     .landing-section {
       flex-direction: column; /* Stack items vertically */
-      padding: 1rem; /* Reduce padding */
+      padding-top: 18rem; /* Reduce padding */
+      padding-bottom: 14rem;
+
+    }
+
+    .landing-content { 
+        flex-direction: column;
+        padding: 1rem;
     }
   
     .round-image {
@@ -347,6 +354,7 @@
       margin-top: 0; /* Adjust margins */
       text-align: center; /* Center headings */
     }
+    
   
     .social-icons {
       position: relative; /* Change position to relative */
@@ -355,11 +363,21 @@
       transform: none; /* Remove transform */
     }
 
+    .section-heading { 
+        font-size: 1.7em;
+    }
+
+    .subsection-heading { 
+        font-size: 1.2em;
+    }
+
     .subsection-text {
         font-size: 0.9em;
         text-align: justify;
         color: #666; /* or any color you prefer */
         /* Other styling as needed */
       }
+
+    
   }
 
