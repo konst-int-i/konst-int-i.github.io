@@ -3,8 +3,6 @@
   overflow: hidden;
 }
 
-/* Other styles... */
-
 
 
 .navbar {
@@ -17,7 +15,8 @@
     right: 0;
     font-size: 1.2em;
     background-color: #333; /* Dark background for visibility */
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
+    padding: 0.5rem 0;
     z-index: 1000; /* Ensure navbar is above all other content */
 }
 
@@ -117,14 +116,14 @@
 
 
 .main-heading{
-  font-size: 2.5em;
+  font-size: 2.0em;
   font-weight: bold;
   margin-bottom: 0vw;
   margin-top: -10vw;
 }
 
 .sub-heading{
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #a0a0a0;
 }
 
@@ -134,7 +133,7 @@
  }
 
 .description-text {
-   font-size: 1.2em;  /* Adjust font size as per preference */
+   font-size: 1.0em;  /* Adjust font size as per preference */
    color: #777;    /* A slightly muted color, but you can use any */
    margin-top: 1vw;  /* Adds a bit of space above the description */
    max-width: 40vw;  /* Limits the width of the text for better readability */
@@ -146,7 +145,7 @@
     text-align: left;
     margin-top: 0vw; /* Adjust as necessary for spacing between the image and the subheading */
     margin-bottom: 0vw;
-    font-size: 1.5em;
+    font-size: 1.2em;
     color: #a0a0a0;
     
 }
@@ -167,7 +166,7 @@
 .publication-container {
     display: flex;
     border: 1px solid #ccc; 
-    padding: 1rem;
+    padding: 0.5rem;
     margin-bottom: 1rem;
 }
 
@@ -190,8 +189,12 @@
 
 .publication-teaser {
     width: 150px; /* larger size */
-    height: 150px; /* maintain aspect ratio */
+    height: 150px;
+    /* height: 150px; maintain aspect ratio */
     border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 }
 
 .publication-box-middle {
@@ -262,7 +265,7 @@
 }
 
 .subsection {
-    width: calc(100% - 10vw); /* Same width calculation as publication-box */
+    width: calc(100% - 50vw); /* Same width calculation as publication-box */
     margin: auto; /* Aligns horizontally like publication-box */
     padding: 15px; /* Assuming you want similar padding */
 }
@@ -274,8 +277,107 @@
 
 .subsection-text {
   font-size: 1.2em;
+  text-align: justify;
   color: #666; /* or any color you prefer */
   /* Other styling as needed */
 }
 
+/* add mobile .css */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Keep items in a horizontal row */
+        justify-content: space-around; /* Distribute space evenly */
+        padding: 0.25rem 0; /* Reduce padding */
+    }
+
+    .navbar a {
+        padding: 0.25rem 0.5rem; /* Adjust padding for smaller screens */
+        font-size: 0.8em; /* Reduce font size to fit items in one row */
+    }
+  
+    .landing-section {
+      flex-direction: column; /* Stack items vertically */
+      padding-top: 18rem; /* Reduce padding */
+      padding-bottom: 14rem;
+
+    }
+
+    .landing-content { 
+        flex-direction: column;
+        padding: 1rem;
+    }
+  
+    .round-image {
+      width: 50vw; /* Adjust image size for smaller screens */
+      height: 50vw; /* Maintain aspect ratio */
+    }
+  
+    .image-container {
+      width: 50vw; /* Adjust container size */
+      height: 50vw;
+    }
+  
+    .intro-text, .description-text, .section-heading, .image-subheading {
+      font-size: 1em; /* Adjust font size for readability */
+      text-align: center; /* Center-align text for smaller screens */
+      max-width: 90vw; /* Adjust max-width for smaller screens */
+    }
+  
+    .left-section, .right-section {
+      margin: 1vw 0; /* Adjust margins */
+      align-items: center; /* Center content */
+    }
+  
+    .publication-box, .subsection {
+      width: 90vw; /* Adjust width for smaller screens */
+    }
+
+    .publication-teaser {
+        width: 75px;
+        height: 75px;
+    }
+
+    .publication-icons img {
+        height: 3vh;
+        margin-bottom: 0.5rem; /* space between icons */
+    }
+
+    .publication-title {
+        font-size: 14pt;
+    }
+    
+    .publication-venue, .publication-authors { 
+        font-size: 12pt;
+    }
+  
+    .main-heading, .sub-heading {
+      margin-top: 0; /* Adjust margins */
+      text-align: center; /* Center headings */
+    }
+    
+  
+    .social-icons {
+      position: relative; /* Change position to relative */
+      bottom: auto; /* Reset bottom property */
+      left: auto; /* Reset left property */
+      transform: none; /* Remove transform */
+    }
+
+    .section-heading { 
+        font-size: 1.7em;
+    }
+
+    .subsection-heading { 
+        font-size: 1.2em;
+    }
+
+    .subsection-text {
+        font-size: 0.9em;
+        text-align: justify;
+        color: #666; /* or any color you prefer */
+        /* Other styling as needed */
+      }
+
+    
+  }
 

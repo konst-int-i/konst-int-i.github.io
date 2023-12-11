@@ -1,5 +1,5 @@
 import React from 'react';
-import Publication from './Publication';
+import PublicationElement from './Publication';
 import Award from './Award';
 
 function Section({ title, id, componentType }) {
@@ -7,7 +7,7 @@ function Section({ title, id, componentType }) {
   const renderContent = () => {
     switch (componentType) {
       case 'publication':
-        return <Publication />;
+        return <PublicationElement />;
       case 'award':
         return <Award />;
       // ... other cases

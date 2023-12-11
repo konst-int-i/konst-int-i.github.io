@@ -1,12 +1,26 @@
 import React from 'react';
 
 
-function Publication({ teaserImage, title, venue, authors, codeLink, paperLink }) {
+// function Publications({
+//   return(
+
+//   )
+// })
+
+
+function PublicationElement({ teaserImage, title, venue, authors, codeLink, paperLink }) {
   return (
     <div className="publication-container">
       <div className="publication-box">
+        {/* <div className="publication-box-left">
+          <img src={teaserImage} alt={title} className="publication-teaser"/>
+        </div> */}
         <div className="publication-box-left">
-          <img src={teaserImage} alt={title} className="publication-teaser" />
+            <div 
+                className="publication-teaser" 
+                style={{ backgroundImage: `url(${teaserImage})` }} 
+                alt={title}>
+            </div>
         </div>
         <div className="publication-box-middle">
           <h3 className="publication-title">{title}</h3>
@@ -25,4 +39,4 @@ function Publication({ teaserImage, title, venue, authors, codeLink, paperLink }
 }
 
 
-export default Publication;
+export default PublicationElement;
