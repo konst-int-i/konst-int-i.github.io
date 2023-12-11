@@ -3,8 +3,6 @@
   overflow: hidden;
 }
 
-/* Other styles... */
-
 
 
 .navbar {
@@ -284,4 +282,84 @@
   /* Other styling as needed */
 }
 
+/* add mobile .css */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: row; /* Keep items in a horizontal row */
+        justify-content: space-around; /* Distribute space evenly */
+        padding: 0.25rem 0; /* Reduce padding */
+    }
+
+    .navbar a {
+        padding: 0.25rem 0.5rem; /* Adjust padding for smaller screens */
+        font-size: 0.8em; /* Reduce font size to fit items in one row */
+    }
+  
+    .landing-section {
+      flex-direction: column; /* Stack items vertically */
+      padding: 1rem; /* Reduce padding */
+    }
+  
+    .round-image {
+      width: 50vw; /* Adjust image size for smaller screens */
+      height: 50vw; /* Maintain aspect ratio */
+    }
+  
+    .image-container {
+      width: 50vw; /* Adjust container size */
+      height: 50vw;
+    }
+  
+    .intro-text, .description-text, .section-heading, .image-subheading {
+      font-size: 1em; /* Adjust font size for readability */
+      text-align: center; /* Center-align text for smaller screens */
+      max-width: 90vw; /* Adjust max-width for smaller screens */
+    }
+  
+    .left-section, .right-section {
+      margin: 1vw 0; /* Adjust margins */
+      align-items: center; /* Center content */
+    }
+  
+    .publication-box, .subsection {
+      width: 90vw; /* Adjust width for smaller screens */
+    }
+
+    .publication-teaser {
+        width: 75px;
+        height: 75px;
+    }
+
+    .publication-icons img {
+        height: 3vh;
+        margin-bottom: 0.5rem; /* space between icons */
+    }
+
+    .publication-title {
+        font-size: 14pt;
+    }
+    
+    .publication-venue, .publication-authors { 
+        font-size: 12pt;
+    }
+  
+    .main-heading, .sub-heading {
+      margin-top: 0; /* Adjust margins */
+      text-align: center; /* Center headings */
+    }
+  
+    .social-icons {
+      position: relative; /* Change position to relative */
+      bottom: auto; /* Reset bottom property */
+      left: auto; /* Reset left property */
+      transform: none; /* Remove transform */
+    }
+
+    .subsection-text {
+        font-size: 0.9em;
+        text-align: justify;
+        color: #666; /* or any color you prefer */
+        /* Other styling as needed */
+      }
+  }
 
