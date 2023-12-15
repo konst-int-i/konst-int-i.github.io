@@ -43,6 +43,9 @@ function Landing() {
             <a href="https://www.linkedin.com/in/konstantin-hemker-b04250a6/" target="_blank" rel="noopener noreferrer">
                 <img src={'/assets/linkedin.png'} alt="LinkedIn" className="social-icon" />
             </a>
+            <a href="https://twitter.com/konst_int_i" target="_blank" rel="noopener noreferrer">
+                <img src={'/assets/twitter.png'} alt="twitter" className="social-icon" />
+            </a>
             <a href="https://scholar.google.com/citations?user=SJVH3nIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
                 <img src={'/assets/google-scholar.png'} alt="Google Scholar" className="social-icon" />
             </a>

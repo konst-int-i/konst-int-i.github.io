@@ -299,12 +299,11 @@
       flex-direction: column; /* Stack items vertically */
       padding-top: 18rem; /* Reduce padding */
       padding-bottom: 14rem;
-
     }
 
     .landing-content { 
         flex-direction: column;
-        padding: 1rem;
+        padding: 0.5rem;
     }
   
     .round-image {
