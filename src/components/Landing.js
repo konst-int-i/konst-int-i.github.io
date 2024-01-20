@@ -59,13 +59,12 @@ function Landing() {
           <h1 className="main-heading">Konstantin Hemker</h1>
           <h2 className="sub-heading">Multi-modal Machine Learning on Biomedical Data</h2>
           <p className="description-text">
-            I am a second-year PhD student in the <a href="https://www.cst.cam.ac.uk/">Computer Laboratory</a> at the University of Cambridge under the supervision of <a href="https://www.cl.cam.ac.uk/~mj201/">Prof Mateja Jamnik</a>. 
+            I am a PhD student in the <a href="https://www.cst.cam.ac.uk/">Computer Laboratory</a> at the University of Cambridge under the supervision of <a href="https://www.cl.cam.ac.uk/~mj201/">Prof Mateja Jamnik</a>. 
             My research is on Multi-Modal and Explainable Machine Learning on Biomedical Data, where I am interested in the following topics:
             <ul>
-                <li>Multi-modal data fusion, especially looking at ways to improve early fusion models</li>
-                <li>Explainability of multi-modal pipelines</li>
-                <li>Looking at applications in digital pathology, radiology, spatial transcriptomics, and precision medicine</li>
-                <li>Happy to explore any problem that deals with image, tabular, and graph data</li>
+                <li>Focussing on multi-modal fusion models and cross-modal explanations</li>
+                <li>Researching applications in multi-scale biological representations and interactions, digital pathology, radiology, spatial transcriptomics, and precision medicine</li>
+                <li>Happy to explore any problem that deals with image, tabular, sequencing, and graph data</li>
             </ul>
             I am very lucky to be funded by the <a href="https://www.gatescambridge.org/biography/18538/">Gates Cambridge Trust</a> to conduct this research and work with many great people in the department along the way.
         </p>

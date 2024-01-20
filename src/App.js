@@ -29,7 +29,7 @@ function App() {
           teaserImage='/assets/healnet_overview.jpg'
           title="HEALNet: Hybrid Multi-Modal Fusion for Heterogeneous Biomedical Data"
           authors="Konstantin Hemker, Nikola Simidjievski, Mateja Jamnik"
-          venue="NeurIPS 2023 Medical Imaging Workshop"
+          venue="NeurIPS 2023 Medical Imaging Workshop, Best Paper Award"
           codeLink="https://github.com/konst-int-i/healnet"
           paperLink="https://arxiv.org/pdf/2311.09115.pdf"
         />
@@ -95,6 +95,7 @@ function App() {
                 <li> <b>Wiseman Prize</b>: Winner of annual prize awarded for "commendable contributions to the work of the 
                 department" in teaching, mentoring, and outreach activities. </li>
                 <li> <b>Best Paper Award</b>: ICLR 2023 Workshop on Trustworthy Machine Learning for Healthcare. </li>
+                <li> <b>Best Paper Award</b>: NeurIPS 2023 Workshop on Medical Imaging. </li>
                 <li> <b>G-Research PhD Grant</b>: Awarded PhD Grant for researchers in quantitative fields. </li>
                 <li> <b>Imperial College London Computing Award for Best Software Engineering Project</b>: Best postgraduate group project in the department. </li>
               </ul>
