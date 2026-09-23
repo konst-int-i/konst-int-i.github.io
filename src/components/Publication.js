@@ -1,42 +1,22 @@
 import React from 'react';
+import paperIcon from '../assets/paper-icon.svg';
+import codeIcon from '../assets/github.png';
 
-
-// function Publications({
-//   return(
-
-//   )
-// })
-
-
-function PublicationElement({ teaserImage, title, venue, authors, codeLink, paperLink }) {
+export default function Publication({ id, teaserImage, title, venue, authors, codeLink, paperLink }) {
   return (
-    <div className="publication-container">
-      <div className="publication-box">
-        {/* <div className="publication-box-left">
-          <img src={teaserImage} alt={title} className="publication-teaser"/>
-        </div> */}
-        <div className="publication-box-left">
-            <div 
-                className="publication-teaser" 
-                style={{ backgroundImage: `url(${teaserImage})` }} 
-                alt={title}>
-            </div>
-        </div>
-        <div className="publication-box-middle">
-          <h3 className="publication-title">{title}</h3>
-          <p className="publication-venue">{venue}</p>
-          <p className="publication-authors">{authors}</p>
-        </div>
-        <div className="publication-box-right">
-          <div className="publication-icons">
-            <a href={paperLink}><img src={'/assets/paper-icon.svg'} alt='Paper Icon' /></a>
-            <a href={codeLink}><img src={'/assets/code-icon.svg'} alt='Code Icon' /></a>
-          </div>
-        </div>
+    <article className="publication" aria-labelledby={`publication-${id}`}>
+      <a className="publication-image-link" href={paperLink} aria-label={`Read ${title}`}>
+        <img src={teaserImage} alt={`Overview figure for ${title}`} className="publication-teaser" loading="lazy" width="112" height="112" />
+      </a>
+      <div className="publication-copy">
+        <h3 id={`publication-${id}`}>{title}</h3>
+        <p className="publication-venue">{venue}</p>
+        <p className="publication-authors">{authors}</p>
       </div>
-    </div>
+      <div className="publication-links">
+        <a href={paperLink} aria-label={`Paper: ${title}`}><img src={paperIcon} alt="" width="24" height="24" />Paper</a>
+        {codeLink && <a href={codeLink} aria-label={`Code: ${title}`}><img src={codeIcon} alt="" width="24" height="24" />Code</a>}
+      </div>
+    </article>
   );
 }
-
-
-export default PublicationElement;

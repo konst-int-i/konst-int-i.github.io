@@ -1,81 +1,55 @@
 import React, { useState } from 'react';
-// import profilePic from '/assets/konstantin-pic.jpg'; // replace with your picture's path
-// import profilePicPixel from '/assets/konstantin-pic-pixel.png';
-// import pathologyPatch from '/assets/pathology_patch.png';
-// import githubIcon from '/assets/github.png';
-// import linkedinIcon from '/assets/linkedin.png';
-// import googleScholarIcon from '/assets/google-scholar.png';
-// import orcidIcon from '/assets/orcid.png';
-// import emailIcon from '/assets/email.png';
+import portrait from '../assets/konstantin-linkedin.jpg';
+import pathology from '../assets/pathology_patch.png';
+import github from '../assets/github.png';
+import linkedin from '../assets/linkedin.png';
+import twitter from '../assets/twitter.png';
+import scholar from '../assets/google-scholar.png';
+import orcid from '../assets/orcid.png';
 
+const profiles = [
+  { name: 'GitHub', href: 'https://github.com/konst-int-i', image: github },
+  { name: 'LinkedIn', href: 'https://www.linkedin.com/in/konstantin-hemker-b04250a6/', image: linkedin },
+  { name: 'Twitter', href: 'https://twitter.com/konst_int_i', image: twitter },
+  { name: 'Google Scholar', href: 'https://scholar.google.com/citations?user=SJVH3nIAAAAJ&hl=en', image: scholar },
+  { name: 'ORCID', href: 'https://orcid.org/0009-0008-6414-0551', image: orcid },
+];
 
-
-function Landing() {
-  const [isHovered, setIsHovered] = useState(false);
+export default function Landing() {
+  const [showPathology, setShowPathology] = useState(false);
 
   return (
-    <section id="home" className="landing-section">
+    <section id="home" className="landing-section" aria-labelledby="name">
       <div className="landing-content">
-
-        <div className="left-section">
-          <div className="image-container"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
+        <div className="profile-section">
+          <button
+            type="button"
+            className="image-container"
+            aria-label="Toggle pathology image"
+            aria-pressed={showPathology}
+            onClick={() => setShowPathology(value => !value)}
           >
-            <img 
-              src={'/assets/konstantin-pic.jpg'}
-              alt="profile"
-              className={`round-image ${isHovered && 'hidden'}`}
-            />
-            <img 
-              src={'/assets/pathology_patch.png'}
-              alt="profile hover"
-              className={`round-image ${!isHovered && 'hidden'}`}
-            />
-          </div>
-          <h3 className="image-subheading">PhD Candidate</h3>
-          <h3 className="image-subheading">Department of Computer Science</h3>
-          <h3 className="image-subheading">University of Cambridge</h3>
-          <div className="social-icons">
-            <a href="https://github.com/konst-int-i" target="_blank" rel="noopener noreferrer">
-                <img src={'/assets/github.png'} alt="GitHub" className="social-icon" />
-            </a>
-            <a href="https://www.linkedin.com/in/konstantin-hemker-b04250a6/" target="_blank" rel="noopener noreferrer">
-                <img src={'/assets/linkedin.png'} alt="LinkedIn" className="social-icon" />
-            </a>
-            <a href="https://twitter.com/konst_int_i" target="_blank" rel="noopener noreferrer">
-                <img src={'/assets/twitter.png'} alt="twitter" className="social-icon" />
-            </a>
-            <a href="https://scholar.google.com/citations?user=SJVH3nIAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">
-                <img src={'/assets/google-scholar.png'} alt="Google Scholar" className="social-icon" />
-            </a>
-            <a href="https://orcid.org/my-orcid?orcid=0009-0008-6414-0551" target="_blank" rel="noopener noreferrer">
-                <img src={'/assets/orcid.png'} alt="OrcID" className="social-icon" />
-            </a>
+            <img src={portrait} alt="Konstantin Hemker" className="round-image portrait" width="800" height="800" />
+            <img src={pathology} alt="Histopathology tissue sample" className="round-image pathology" width="800" height="800" />
+          </button>
+          <p className="image-subheading">Life Sciences at OpenAI</p>
+          <div className="social-icons" aria-label="Professional profiles">
+            {profiles.map(({ name, href, image }) => (
+              <a key={name} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${name} (opens in a new tab)`}>
+                <img src={image} alt="" className="social-icon" width="36" height="36" />
+              </a>
+            ))}
           </div>
         </div>
-
-        <div className="right-section">
-          <h1 className="main-heading">Konstantin Hemker</h1>
-          <h2 className="sub-heading">Multi-modal Machine Learning on Biomedical Data</h2>
-          <p className="description-text">
-            I am a PhD student in the <a href="https://www.cst.cam.ac.uk/">Computer Laboratory</a> at the University of Cambridge under the supervision of <a href="https://www.cl.cam.ac.uk/~mj201/">Prof Mateja Jamnik</a>. 
-            My research is on Multi-Modal and Explainable Machine Learning on Biomedical Data, where I am interested in the following topics:
-            <ul>
-                <li>Focussing on multi-modal fusion models and cross-modal explanations</li>
-                <li>Researching applications in multi-scale biological representations and interactions, digital pathology, radiology, spatial transcriptomics, and precision medicine</li>
-                <li>Happy to explore any problem that deals with image, tabular, sequencing, and graph data</li>
-            </ul>
-            I am very lucky to be funded by the <a href="https://www.gatescambridge.org/biography/18538/">Gates Cambridge Trust</a> to conduct this research and work with many great people in the department along the way.
-        </p>
-
+        <div className="intro-text">
+          <h1 id="name">Konstantin Hemker</h1>
+          <p className="sub-heading">AI x Life Sciences</p>
+          <div className="description-text">
+            <p>I work on the Life Sciences team at OpenAI to accelerate work in biology, chemistry, and drug discovery &amp; development more broadly.</p>
+            <p>Previously, I researched multimodal and explainable machine learning for spatial biology at the <a href="https://www.cst.cam.ac.uk/">University of Cambridge</a>, supported by the Gates Cambridge Trust.</p>
+          </div>
         </div>
-
       </div>
     </section>
   );
 }
-
-export default Landing;
-
-
