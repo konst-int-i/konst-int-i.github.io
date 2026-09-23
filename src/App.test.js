@@ -29,12 +29,12 @@ test('renders the current role, working section anchors, and accessible profile 
   expect(screen.getByRole('link', { name: /Google Scholar/ })).toHaveAttribute('href', expect.stringContaining('SJVH3nIAAAAJ'));
 });
 
-test('shows seven publications with new local PDFs first and only verified code links', () => {
+test('shows seven publications with external paper links and only verified code links', () => {
   render(<App />);
   const rows = screen.getAllByRole('article');
   expect(rows).toHaveLength(7);
-  ['seal', 'multimodal-lego', 'vortex'].forEach((id, index) => {
-    expect(within(rows[index]).getByRole('link', { name: /^Paper:/ })).toHaveAttribute('href', `/papers/${id}.pdf`);
+  ['2602.14177', '2405.19950', '2502.17761'].forEach((id, index) => {
+    expect(within(rows[index]).getByRole('link', { name: /^Paper:/ })).toHaveAttribute('href', `https://arxiv.org/abs/${id}`);
   });
   expect(within(rows[1]).getByText('ICLR 2025')).toBeInTheDocument();
   expect(within(rows[2]).queryByRole('link', { name: /^Code:/ })).not.toBeInTheDocument();
@@ -42,7 +42,9 @@ test('shows seven publications with new local PDFs first and only verified code 
   expect(screen.getByText(/NeurIPS 2023 Workshop on Medical Imaging, for HEALNet/)).toBeInTheDocument();
   for (const row of rows) {
     expect(within(row).getByRole('img', { name: /^Overview figure/ })).toHaveAttribute('src');
-    expect(within(row).getByRole('link', { name: /^Paper:/ })).toHaveAttribute('href');
+    const paper = within(row).getByRole('link', { name: /^Paper:/ });
+    expect(paper).toHaveAttribute('href', expect.stringMatching(/^https:\/\//));
+    expect(within(row).getByRole('link', { name: /^Read / })).toHaveAttribute('href', paper.getAttribute('href'));
   }
 });
 

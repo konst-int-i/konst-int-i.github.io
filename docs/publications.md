@@ -1,18 +1,18 @@
 # Publication asset sources
 
-Downloaded on 23 September 2026. PDFs are unchanged copies from arXiv. Overview images are rendered crops of the complete Figure 1 artwork, excluding the separate caption, with a white margin. Original diagrams and labels are preserved; no generated illustrations are used.
+Paper sources were reviewed on 23 September 2026. All Paper links go to online publications; no PDF copies are hosted by this site. Overview images are rendered crops of the complete Figure 1 artwork, excluding the separate caption, with a white margin. Original diagrams and labels are preserved; no generated illustrations are used.
 
-| Local PDF | Primary source | Version | Local overview image | Figure origin |
+| Paper | Primary source | Version | Local overview image | Figure origin |
 | --- | --- | --- | --- | --- |
-| `seal.pdf` | https://arxiv.org/pdf/2602.14177 | v1, 15 February 2026 | `src/assets/seal-overview.png` | Figure 1, PDF page 5, panels A-D |
-| `multimodal-lego.pdf` | https://arxiv.org/pdf/2405.19950 | v2, 16 April 2025 | `src/assets/multimodal-lego-overview.png` | Figure 1, PDF page 2, complete workflow |
-| `vortex.pdf` | https://arxiv.org/pdf/2502.17761 | v1, 25 February 2025 | `src/assets/vortex-overview.png` | Figure 1, PDF page 5, panels A-C |
+| SEAL | https://arxiv.org/pdf/2602.14177 | v1, 15 February 2026 | `src/assets/seal-overview.png` | Figure 1, PDF page 5, panels A-D |
+| Multimodal Lego | https://arxiv.org/pdf/2405.19950 | v2, 16 April 2025 | `src/assets/multimodal-lego-overview.png` | Figure 1, PDF page 2, complete workflow |
+| VORTEX | https://arxiv.org/pdf/2502.17761 | v1, 25 February 2025 | `src/assets/vortex-overview.png` | Figure 1, PDF page 5, panels A-C |
 
 ## Verified metadata
 
 **Towards Spatial Transcriptomics-driven Pathology Foundation Models (SEAL)**. Konstantin Hemker, Andrew H. Song, Cristina Almagro-Pérez, Guillaume Jaume, Sophia J. Wagner, Anurag Vaidya, Nikola Simidjievski, Mateja Jamnik, and Faisal Mahmood. arXiv preprint, 2026. [Metadata](https://arxiv.org/abs/2602.14177). [Code](https://github.com/mahmoodlab/SEAL).
 
-**Multimodal Lego: Model Merging and Fusion Across Topologies and Modalities in Biomedicine**. Konstantin Hemker, Nikola Simidjievski, and Mateja Jamnik. ICLR 2025. [Metadata](https://arxiv.org/abs/2405.19950). [Code](https://github.com/konst-int-i/mm-lego). The actual ICLR PDF uses "Fusion" in its title; arXiv's abstract-page metadata uses "Fine-Tuning". The local PDF is the correct Multimodal Lego paper, not the unrelated HEALNet paper linked by the repository's PDF shortcut.
+**Multimodal Lego: Model Merging and Fusion Across Topologies and Modalities in Biomedicine**. Konstantin Hemker, Nikola Simidjievski, and Mateja Jamnik. ICLR 2025. [Metadata](https://arxiv.org/abs/2405.19950). [Code](https://github.com/konst-int-i/mm-lego). The actual ICLR PDF uses "Fusion" in its title; arXiv's abstract-page metadata uses "Fine-Tuning". The paper link uses the correct arXiv record, rather than the unrelated HEALNet paper linked by the repository's PDF shortcut.
 
 **AI-driven 3D Spatial Transcriptomics (VORTEX)**. Cristina Almagro-Pérez, Andrew H. Song, Luca Weishaupt, Ahrong Kim, Guillaume Jaume, Drew F.K. Williamson, Konstantin Hemker, Ming Y. Lu, Kritika Singh, Bowen Chen, Long Phi Le, Alexander S. Baras, Sizun Jiang, Ali Bashashati, Jonathan T.C. Liu, and Faisal Mahmood. arXiv preprint, 2025. [Metadata](https://arxiv.org/abs/2502.17761).
 

@@ -24,7 +24,7 @@ CI=true npm run build
 
 - Edit publications in `src/data/publications.js`. Omit `codeLink` when no repository is available.
 - Images are imported from `src/assets` so the production build fingerprints and bundles them.
-- New paper PDFs live in `public/papers`; source URLs, versions, and figure provenance are in `public/papers/README.md`.
+- Paper links point to online publications; PDFs are not hosted locally. Source URLs, versions, and thumbnail provenance are in `docs/publications.md`.
 - Edit the introduction in `src/components/Landing.js`, and historical sections in `src/App.js`.
 - The portrait switches to the pathology image on hover, click, or keyboard activation. System reduced-motion preferences disable the animated particle background and transitions.
 

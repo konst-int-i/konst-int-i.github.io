@@ -6,7 +6,7 @@ import cgx from '../assets/cgx_overview.jpg';
 import synergy from '../assets/SIR_paper_overview.jpg';
 import augmentation from '../assets/hate_speech_paper_overview.jpg';
 
-// Canonical sources and downloaded paper versions are recorded in public/papers/README.md.
+// Publication sources and figure provenance are recorded in docs/publications.md.
 export const publications = [
   {
     id: 'seal',
@@ -14,7 +14,7 @@ export const publications = [
     title: 'SEAL: Towards Spatial Transcriptomics-driven Pathology Foundation Models',
     venue: 'arXiv preprint, 2026',
     authors: 'Konstantin Hemker, Andrew H. Song, Cristina Almagro-Pérez, Guillaume Jaume, Sophia J. Wagner, Anurag Vaidya, Nikola Simidjievski, Mateja Jamnik, Faisal Mahmood',
-    paperLink: '/papers/seal.pdf',
+    paperLink: 'https://arxiv.org/abs/2602.14177',
     codeLink: 'https://github.com/mahmoodlab/SEAL',
   },
   {
@@ -23,7 +23,7 @@ export const publications = [
     title: 'Multimodal Lego: Model Merging and Fusion Across Topologies and Modalities in Biomedicine',
     venue: 'ICLR 2025',
     authors: 'Konstantin Hemker, Nikola Simidjievski, Mateja Jamnik',
-    paperLink: '/papers/multimodal-lego.pdf',
+    paperLink: 'https://arxiv.org/abs/2405.19950',
     codeLink: 'https://github.com/konst-int-i/mm-lego',
   },
   {
@@ -32,7 +32,7 @@ export const publications = [
     title: 'AI-driven 3D Spatial Transcriptomics',
     venue: 'arXiv preprint, 2025',
     authors: 'Cristina Almagro-Pérez, Andrew H. Song, Luca Weishaupt, Ahrong Kim, Guillaume Jaume, Drew F.K. Williamson, Konstantin Hemker, Ming Y. Lu, Kritika Singh, Bowen Chen, Long Phi Le, Alexander S. Baras, Sizun Jiang, Ali Bashashati, Jonathan T.C. Liu, Faisal Mahmood',
-    paperLink: '/papers/vortex.pdf',
+    paperLink: 'https://arxiv.org/abs/2502.17761',
   },
   {
     id: 'healnet',
