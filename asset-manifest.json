@@ -1,15 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf85bb47.css",
-    "main.js": "/static/js/main.3d694106.js",
+    "main.css": "/static/css/main.6d4ffdc1.css",
+    "main.js": "/static/js/main.874f4e50.js",
     "static/js/787.5db65bdc.chunk.js": "/static/js/787.5db65bdc.chunk.js",
+    "static/media/pathology_patch.png": "/static/media/pathology_patch.7e0bcbb1dca352f9bbf2.png",
+    "static/media/vortex-overview.png": "/static/media/vortex-overview.4dfdfb39db335f5cefa1.png",
+    "static/media/konstantin-linkedin.jpg": "/static/media/konstantin-linkedin.67c3ee5cef6641b948aa.jpg",
+    "static/media/healnet_overview.jpg": "/static/media/healnet_overview.3be49f26012c4c0695e7.jpg",
+    "static/media/cgx_overview.jpg": "/static/media/cgx_overview.e63e3ed988fcd8038b6d.jpg",
+    "static/media/seal-overview.png": "/static/media/seal-overview.27f3ea0b15ee302e3eff.png",
+    "static/media/hate_speech_paper_overview.jpg": "/static/media/hate_speech_paper_overview.d4ca4da16265eadda1f7.jpg",
+    "static/media/multimodal-lego-overview.png": "/static/media/multimodal-lego-overview.598b9385aa130bf7b008.png",
+    "static/media/github.png": "/static/media/github.abb5df5cb6033db6a886.png",
+    "static/media/orcid.png": "/static/media/orcid.0e4cb16fff773352e451.png",
+    "static/media/SIR_paper_overview.jpg": "/static/media/SIR_paper_overview.868c3331b9ec65c20edc.jpg",
+    "static/media/linkedin.png": "/static/media/linkedin.24ab830724c055b9dd67.png",
+    "static/media/twitter.png": "/static/media/twitter.3e286d7d8c4c777ed109.png",
+    "static/media/paper-icon.svg": "/static/media/paper-icon.4f690c86e68d26cdc186b92e3bacc3c0.svg",
     "index.html": "/index.html",
-    "main.bf85bb47.css.map": "/static/css/main.bf85bb47.css.map",
-    "main.3d694106.js.map": "/static/js/main.3d694106.js.map",
+    "main.6d4ffdc1.css.map": "/static/css/main.6d4ffdc1.css.map",
+    "main.874f4e50.js.map": "/static/js/main.874f4e50.js.map",
     "787.5db65bdc.chunk.js.map": "/static/js/787.5db65bdc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf85bb47.css",
-    "static/js/main.3d694106.js"
+    "static/css/main.6d4ffdc1.css",
+    "static/js/main.874f4e50.js"
   ]
 }
